@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Integrating Firebase in our App -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyB6YseCXxd9ZdSKuxOhPM5BIJoJT-zBl1U",
+        authDomain: "chatapp-2e528.firebaseapp.com",
+        projectId: "chatapp-2e528",
+        storageBucket: "chatapp-2e528.appspot.com",
+        messagingSenderId: "189102749661",
+        appId: "1:189102749661:web:d73de2ec8b3eb2b39ca834",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Chat App</title>
+  </head>
+  <body>
+    <!-- Messages -->
+    <ul id="messages"></ul>
+    <!-- Input Bar -->
+    <div id="inputBar">
+      <input
+        type="text"
+        name=""
+        id="input"
+        placeholder="Message..."
+        autofocus
+      />
+      <button type="submit" id="btn">
+        <i class="far fa-paper-plane"></i>
+      </button>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

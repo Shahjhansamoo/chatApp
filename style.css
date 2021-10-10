@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
+* {
+  font-family: "Montserrat";
+  margin: 0px;
+}
+
+.messages {
+  min-height: 90vh;
+  height: 100%;
+  background: linear-gradient(to top, #ffffffdd, #ffffffdd), url("bg-1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  list-style-type: none;
+  padding: 1%;
+  padding-bottom: 7%;
+}
+
+.msgLeft {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.msgRight {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
+
+.msgDiv {
+  max-width: 270px;
+}
+
+.delBtn {
+  cursor: pointer;
+  padding: 0px 1%;
+}
+
+.msg {
+  font-size: 13px;
+  line-height: 1.8;
+  background-color: #088ae0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.msgDetails {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.inputBar {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+  width: 98%;
+  background: #fff;
+  box-shadow: 0px -1px 15px 0px #088ae030;
+}
+
+.input {
+  width: 78%;
+  padding: 10px;
+  margin: 0px 1%;
+  border-radius: 5px;
+  border: 1px solid #088ae0;
+  outline: none;
+  font-size: 14px;
+}
+
+.input:focus {
+  border: 1px solid #088ae0;
+  box-shadow: 0px 0px 12px #088ae050;
+}
+
+.btn {
+  width: 18%;
+  margin: 0px 1%;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #088ae0;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  box-shadow: 0px 0px 10px 1px #088ae050;
+  transform: translateY(-2px);
+}
+
+.fas.fa-paper-plane {
+  display: inline;
+}
+
+.btnText {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .messages {
+    min-height: 80vh;
+  }
+  .fas.fa-paper-plane {
+    display: none;
+  }
+  .btnText {
+    display: inline;
+  }
+  .input {
+    width: 90%;
+  }
+  .btn {
+    width: 10%;
+  }
+  .msgDiv {
+    max-width: 500px;
+  }
+}
